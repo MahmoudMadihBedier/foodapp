@@ -8,7 +8,7 @@ import 'package:foodapp/features/orderHistory/view/orderHistory.dart';
 import 'package:foodapp/features/products/view/productPage.dart';
 
 class Root extends StatefulWidget {
-  static String routeName= "root";
+  static String routeName = "root";
   const Root({super.key});
 
   @override
@@ -36,39 +36,45 @@ class _RootState extends State<Root> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: PageView(controller: controller, children: screens),
+      body: PageView(
+        physics: NeverScrollableScrollPhysics(),
+        controller: controller, children: screens),
       bottomNavigationBar: Container(
         padding: EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: ColorApp.primyColor,
           borderRadius: BorderRadius.circular(30),
-
         ),
         child: BottomNavigationBar(
           elevation: 0,
-            backgroundColor: Colors.transparent,
-            type:BottomNavigationBarType.fixed,
-            selectedItemColor: Colors.white,
-            unselectedItemColor: Colors.grey,
-        
-            onTap: (index){
-              setState(() {
-                currentSceen=index;
-              });
-              controller.jumpToPage(currentSceen);
-            },
-        
-        
-        
+          backgroundColor: Colors.transparent,
+          type: BottomNavigationBarType.fixed,
+          selectedItemColor: Colors.white,
+          unselectedItemColor: Colors.grey,
+
+          onTap: (index) {
+            setState(() => currentSceen = index);
+            controller.jumpToPage(currentSceen);
+          },
+
           currentIndex: currentSceen,
           items: [
-        
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.home),label: "home"),
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.cart),label: "cart"),
             BottomNavigationBarItem(
-              icon: Icon(CupertinoIcons.rectangle_on_rectangle_angled),label: "history"
+              icon: Icon(CupertinoIcons.home),
+              label: "home",
             ),
-            BottomNavigationBarItem(icon: Icon(CupertinoIcons.person_fill),label: "profile"),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.cart),
+              label: "cart",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.rectangle_on_rectangle_angled),
+              label: "history",
+            ),
+            BottomNavigationBarItem(
+              icon: Icon(CupertinoIcons.person_fill),
+              label: "profile",
+            ),
           ],
         ),
       ),
