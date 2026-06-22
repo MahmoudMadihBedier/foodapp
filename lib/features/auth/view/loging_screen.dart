@@ -1,15 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:foodapp/core/constans/app_color.dart';
+import 'package:foodapp/features/auth/shared/customeButton.dart';
 import 'package:foodapp/features/auth/view/signup_screen.dart';
+import 'package:foodapp/features/home/view/homeScreen.dart';
 import 'package:foodapp/shared/customTextform.dart';
 import 'package:foodapp/shared/customeText.dart';
 import 'package:gap/gap.dart';
 
 class LogingScreen extends StatelessWidget {
+  TextEditingController emailTextControler = TextEditingController();
+  TextEditingController passTextControler = TextEditingController();
   static String routeName = "loginScreen";
 
   final GlobalKey<FormState> formkey = GlobalKey<FormState>();
+
   void valetaor(_v) {
     if (_v == null || _v.trim().isEmpty) {
       print("pless insert the form");
@@ -39,35 +44,27 @@ class LogingScreen extends StatelessWidget {
               ),
               Gap(50),
 
-              Customtextform(hint: "email adress", isPassword: false),
+              Customtextform(
+                textcontroler: emailTextControler,
+                hint: "email adress",
+                isPassword: false,
+              ),
               Gap(20),
 
-              Customtextform(hint: "password", isPassword: true),
+              Customtextform(
+                textcontroler: passTextControler,
+                hint: "password",
+                isPassword: true,
+              ),
               Gap(30),
-              GestureDetector(
-                onTap: () {
+              //Navigator.pushNamed(context,SignupScreen.routeName );
+              Customebutton(
+                title: "login",
+                ontap: () {
                   if (formkey.currentState!.validate()) {
-                    Navigator.pushNamed(context, SignupScreen.routeName);
+                    Navigator.pushNamed(context, Homescreen.routename);
                   }
-                  print("need neddd");
-                  //Navigator.pushNamed(context,SignupScreen.routeName );
                 },
-                child: Container(
-                  width: 250,
-                  height: 60,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(25),
-                  ),
-                  child: Center(
-                    child: CoustomeTexr(
-                      data: "login",
-                      color: ColorApp.primyColor,
-                      fontSize: 20,
-                      fontWeight: FontWeight.bold,
-                    ),
-                  ),
-                ),
               ),
               Spacer(),
               Image.asset("assets/images/sanduasg.png"),

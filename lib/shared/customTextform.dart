@@ -1,37 +1,44 @@
 import 'package:flutter/material.dart';
 import 'package:foodapp/core/constans/app_color.dart';
 
-class Customtextform extends StatelessWidget {
+class Customtextform extends StatefulWidget {
+  TextEditingController textcontroler=TextEditingController();
   final String hint;
   final bool isPassword;
     final String? Function(String?)? validator;
 
-  const Customtextform({
+   Customtextform({
     super.key,
     required this.hint,
     required this.isPassword,
+    required this.textcontroler,
     this.validator,
   });
 
+  @override
+  State<Customtextform> createState() => _CustomtextformState();
+}
+
+class _CustomtextformState extends State<Customtextform> {
   String? _defaultValidator(String? value) {
     if (value == null || value.trim().isEmpty) {
-      return "Please enter your $hint";
+      return "Please enter your ${widget.hint}";
     }
     return null;
   }
 
-
   @override
   Widget build(BuildContext context) {
     return TextFormField(
+      controller: widget.textcontroler,
       cursorHeight: 10,
       cursorColor: ColorApp.primyColor,
-      validator: validator ?? _defaultValidator,
+      validator: widget.validator ?? _defaultValidator,
 
-      obscureText: isPassword,
+      obscureText: widget.isPassword,
       decoration: InputDecoration(
-        hint: Text(hint),
-        suffix: isPassword ? Icon(Icons.password_outlined) : null,
+        hint: Text(widget.hint),
+        suffix: widget.isPassword ? Icon(Icons.password_outlined) : null,
         border: OutlineInputBorder(),
         filled: true,
         fillColor: Colors.white,
