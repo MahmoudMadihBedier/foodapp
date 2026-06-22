@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:foodapp/features/auth/view/loging_screen.dart';
+import 'package:foodapp/route.dart';
 import 'package:foodapp/spalshScreen.dart';
 
 void main(){
@@ -13,9 +15,7 @@ class myApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       initialRoute: Spalshscreen.routeName ,
-      routes: {
-        Spalshscreen.routeName:(context) => Spalshscreen(),
-      },
+      routes:routeMap,
     );
   }
 }
