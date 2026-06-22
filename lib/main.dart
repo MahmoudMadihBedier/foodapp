@@ -12,9 +12,9 @@ class myApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      initialRoute: HomeScreen.routeName ,
+      initialRoute: Spalshscreen.routeName ,
       routes: {
-        HomeScreen.routeName:(context) => HomeScreen(),
+        Spalshscreen.routeName:(context) => Spalshscreen(),
       },
     );
   }

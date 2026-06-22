@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class HomeScreen extends StatelessWidget {
+class Spalshscreen extends StatelessWidget {
  static String routeName="HomeScreen";
 
   @override
