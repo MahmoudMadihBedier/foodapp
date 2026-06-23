@@ -5,7 +5,7 @@ import 'package:foodapp/features/auth/view/profile.dart';
 import 'package:foodapp/features/cart/view/cartHome.dart';
 import 'package:foodapp/features/home/view/homeScreen.dart';
 import 'package:foodapp/features/orderHistory/view/orderHistory.dart';
-import 'package:foodapp/features/products/view/productPage.dart';
+import 'package:foodapp/features/products/view/productDetailsPage.dart';
 
 class Root extends StatefulWidget {
   static String routeName = "root";
@@ -26,7 +26,7 @@ class _RootState extends State<Root> {
       Homescreen(),
       Carthome(),
       Orderhistory(),
-      Productpage(),
+      ProductDetailspage(),
       ProfilePages(),
     ];
     controller = PageController(initialPage: currentSceen);
