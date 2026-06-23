@@ -1,0 +1,130 @@
+import 'package:foodapp/features/home/widgets/carddWidget.dart';
+
+List<Cardwidget> productsfeed = [
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+  Cardwidget(
+    imagePath: "assets/images/image 6.png",
+    title: "Cheeseburger",
+    subTitle: "Wendy's Burger",
+    rate: 4.8,
+  ),
+];
