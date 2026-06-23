@@ -5,7 +5,7 @@ import 'package:foodapp/shared/customeText.dart';
 class Customebutton extends StatelessWidget {
   final Function() ? ontap;
   final String title;
-  const Customebutton({super.key ,required this.title ,required this.ontap});
+   Customebutton({super.key ,required this.title ,required this.ontap});
 
   @override
   Widget build(BuildContext context) {
